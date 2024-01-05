@@ -180,6 +180,7 @@ container_build(){
   --log-opt max-size=1m \
   -v /lib/modules:/lib/modules \
   -v $WGCF_DIR:$WGCF_DIR \
+  -p 40000:40000 \
   fscarmen/netflix_unlock:latest
 
   # 清理临时文件
